@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <!--<PatternLayout pattern="[%-5p] | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>-->
+            <PatternLayout pattern="[%-5p] | %d{yyyy-MM-dd HH:mm:ss} | (%-27F:%-3L) - %m%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="console" level="info"/>
+        </Root>
+    </Loggers>
+</Configuration>
